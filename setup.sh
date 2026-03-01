@@ -6,7 +6,7 @@ fc-cache -fv
 
 
 # Installation for util (snapd -> nvim,)
-sudo apt install zsh tmux snapd flatpak -y
+sudo apt install zsh tmux snapd flatpak gh -y
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 flatpak install flathub com.google.Chrome
 sudo snap install neovim

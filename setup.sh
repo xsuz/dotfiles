@@ -6,10 +6,12 @@ fc-cache -fv
 
 
 # Installation for util (snapd -> nvim,)
-sudo apt install zsh tmux snapd flatpak gh -y
+sudo apt install zsh tmux snapd flatpak gh stow -y
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-flatpak install flathub com.google.Chrome
+#flatpak install flathub com.google.Chrome
 sudo snap install neovim
+
+stow -vt ~ git zsh nvim
 
 # Installation for Latex
 sudo apt install texlive-lang-japanese texlive-science texlive-pictures texlive-luatex texlive-latex-extra texlive-fonts-recommended latexmk

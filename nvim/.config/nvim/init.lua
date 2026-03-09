@@ -94,3 +94,4 @@ vim.diagnostic.config({
 -- General Settings
 
 vim.opt.number = true
+vim.opt.clipboard = "unnamedplus"

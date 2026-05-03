@@ -4,6 +4,12 @@ sudo apt upgrade -y
 # Font update (for Nerd font)
 # fc-cache -fv
 
+if [ ! -e ~/.local/bin/nvim ]; then
+	curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.appimage
+	mkdir -p ~/.local/bin
+	mv nvim-linux-x86_64.appimage ~/.local/bin/nvim
+	chmod u+x ~/.local/bin/nvim
+fi
 
 # Installation for util (snapd -> nvim,)
 sudo apt install fish gh stow -y

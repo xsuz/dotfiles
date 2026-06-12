@@ -11,11 +11,11 @@ if [ ! -e ~/.local/bin/nvim ]; then
 	chmod u+x ~/.local/bin/nvim
 fi
 
-# Installation for util (snapd -> nvim,)
-sudo apt install fish gh stow -y
+# Installation for util
+sudo apt install fish gh stow ripgrep fzf -y
 
 # sudo apt install flatpak -y
-# flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+# flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 # flatpak install flathub com.google.Chrome
 
 stow -vt ~ git zsh nvim fish
